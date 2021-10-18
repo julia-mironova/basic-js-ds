@@ -69,8 +69,8 @@ const { Node } = require('../extensions/list-tree.js');
   }
 
   remove( data) {
-    let arr = getArrayFromTree();
-    
+    let arr = this.getArrayFromTree();
+
   }
   
   getArrayFromTree() {
@@ -115,22 +115,5 @@ const { Node } = require('../extensions/list-tree.js');
 
 }
  }
-const myTree = new BinarySearchTree();
-//let input = [2, 7, 1, 8, 4, 32, 12, 14];
-myTree.add(9);
-myTree.add(14);
-myTree.add(54);
-myTree.add(2);
-myTree.add(6);
-myTree.add(8);
-myTree.add(31);
-myTree.add(1);
-myTree.remove(6);
-myTree.remove(2);
-
-console.log(myTree.min());
-/*myTree.trverseDFS(node => {
-  console.log(node.value)
-}, "preOrder");*/
 
 module.exports = BinarySearchTree;
